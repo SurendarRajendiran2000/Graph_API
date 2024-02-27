@@ -1,0 +1,20 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success</title>
+</head>
+<body>
+    <h1>Success</h1>
+    <p>Access token stored in local storage.</p>
+    <button onclick="logout()">Logout</button>
+
+    <script>
+        // Logout function to clear local storage and redirect to logout route
+        function logout() {
+            localStorage.removeItem('access_token');
+            window.location.href = '/logout';
+        }
+    </script>
+</body>
+</html>
